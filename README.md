@@ -16,6 +16,7 @@ Each vignette is a standalone `.Rmd` file — open it in RStudio, make sure you 
 | Author | Vignette | Package(s) | What It Covers | Dataset |
 |---|---|---|---|---|
 | Mark H. | [Student Mental Health & Burnout](student_mental_health_ggplot2.Rmd) | ggplot2 | geom_histogram, geom_boxplot, geom_point, geom_smooth, geom_bar, facet_wrap | [Kaggle](https://www.kaggle.com/datasets/sharmajicoder/student-mental-health-and-burnout) |
+| Brandon C. | [Exploring IMDb Ratings by Genre](exploring_imbd_ratings_by_genre_with_tidyverse.qmd) | tidyverse (dplyr, tidyr, ggplot2, readr) | separate_rows, group_by, summarise, filter, geom_col | [Kaggle](https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows?resource=download) |
 
 ---
 
@@ -47,6 +48,19 @@ Revision/Addition Description and Link:
 
 # Brandon C
 Initial Description and Link:
+
+### Vignette Description:
+The vignette submitted is titled exploring_imdb_ratings_by_genre_with_tidyverse.qmd. It demonstrates how several TidyVerse packages may be used together to import, tidy, transform, summarize, and visualize a real world dataset in R.
+
+### Dataset Description and Link:
+The dataset used is the IMDb Dataset of Top 1000 Movies and TV Shows, sourced from Kaggle. It includes variables such as title, genre, IMDb rating, runtime, and gross earnings.  
+Link: https://www.kaggle.com/datasets/harshitshankhdhar/imdb-dataset-of-top-1000-movies-and-tv-shows?resource=download
+
+### TidyVerse Functions Used:
+This vignette draws upon functions from readr, dplyr, tidyr, and ggplot2, including read_csv(), select(), separate_rows(), group_by(), summarise(), filter(), and ggplot() with geom_col().
+
+### Summary of Analysis:
+A central focus of the vignette was the genre field, since multiple genres were often stored within a single observation and were therefore not immediately in a tidy format for grouped analysis. Using separate_rows(), the field was restructured into a more analysis-ready form, after which the data was grouped and summarized in order to compare average IMDb ratings across genres, with the results being visualized in a bar chart.
 
 Revision/Addition Description and Link:
 
